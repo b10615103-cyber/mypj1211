@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作品集</title>
+    
+    <link rel="stylesheet" href="./pj.css">
+    
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
+    
+    <link rel="stylesheet" href="./lightbox/css/lightbox.min.css"> 
+</head>
+<body>
+
+<div class="wrap">
+
+    <div class="main-carousel">
+        <div class="slide">
+            
+            <img src="./img/21江淯審作品集_page-0001.jpg" width="100%" alt="作品集首頁設計">
+        </div>
+        <div class="slide">
+            <img src="./img/21江淯審作品集_page-0002.jpg" width="100%" alt="作品集第二頁簡介">
+        </div>
+    </div>
+
+    <!-- 自介 -->
+    <section>
+        <a href="./img/燈箱圖/證照-31.jpg" width="80%" data-lightbox="01" data-title="證照">
+            <img src="./img/21江淯審作品集_page-0003.jpg" width="100%" alt="個人證照與技能介紹頁面" loading="lazy">
+        </a>
+    </section>
+
+    <!-- 粉圓豆花 -->
+    <section>
+        <a href="./img/燈箱圖/粉圓尬豆花名片.jpg" width="80%" data-lightbox="02" data-title="名片">
+            <img src="./img/21江淯審作品集_page-0004.jpg" width="100%" alt="粉圓豆花專案設計頁面 1" loading="lazy">
+        </a>
+
+        <a href="./img/燈箱圖/產品圖.jpeg" width="80%" data-lightbox="02" data-title="產品圖"></a>
+    </section>
+    <!-- 粉圓豆花2 -->
+    <section>
+        <a href="./img/燈箱圖/菜單練習_工作區域 1.jpg" width="80%" data-lightbox="03" data-title="產品三折頁">
+            <img src="./img/21江淯審作品集_page-0005.jpg" width="100%" alt="粉圓豆花專案設計頁面 2" loading="lazy">
+        </a>
+
+        <a href="./img/燈箱圖/三折頁練習.png" width="80%" data-lightbox="03" data-title="產品三折頁2"></a>
+    </section>
+
+    <img src="./img/21江淯審作品集_page-0006.jpg" width="100%" alt="作品集頁面 6" loading="lazy">
+    <img src="./img/21江淯審作品集_page-0018.jpg" width="100%" alt="作品集頁面 18" loading="lazy">
+
+</div>
+
+<script src="./lightbox/js/lightbox-plus-jquery.js"></script>
+
+<script type="text/javascript" src="./slick/slick.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+      $('.main-carousel').slick({
+        dots: true, // 底部導航點
+        arrows: true, // 顯示箭頭
+        infinite: true,
+        slidesToShow: 1,
+        autoplay: true, // 自動播放
+        autoplaySpeed: 3000, // 3 秒切換一次
+        
+        // 為了確保箭頭在頁面上正常顯示，您可能需要在 pj.css 中定義 .slick-prev 和 .slick-next 的樣式和位置。
+      });
+    });
+</script>
+
+</body>
+</html>
